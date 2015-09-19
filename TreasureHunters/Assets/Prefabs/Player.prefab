@@ -47,6 +47,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 422962}
   - 212: {fileID: 21203060}
+  - 114: {fileID: 11481662}
   m_Layer: 0
   m_Name: pickupTile
   m_TagString: Untagged
@@ -168,7 +169,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 128874}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .00599980354, y: 1.02799988, z: 0}
+  m_LocalPosition: {x: .00599980354, y: 1.02799988, z: -.5}
   m_LocalScale: {x: 1.47433221, y: 1.47433257, z: 1.47433257}
   m_Children: []
   m_Father: {fileID: 492248}
@@ -631,6 +632,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colliding: 0
+--- !u!114 &11481662
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 128874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1eec60b9c80c7148a51814323f1e6aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showTime: 2
+  a: {fileID: 21300000, guid: 71b6762887d9df040ab054142809838b, type: 3}
+  e: {fileID: 21300000, guid: 43def796282381747b4506109881ddf5, type: 3}
+  i: {fileID: 21300000, guid: ef156ac0ba8b668469a16ddd74d98b99, type: 3}
+  u: {fileID: 21300000, guid: 5e7543e7b584f724a8f0dedba44cc709, type: 3}
+  defaultTile: {fileID: 21300000, guid: 8274529a2d9e4b0499ca46996012d642, type: 3}
 --- !u!124 &12420902
 Behaviour:
   m_ObjectHideFlags: 1
