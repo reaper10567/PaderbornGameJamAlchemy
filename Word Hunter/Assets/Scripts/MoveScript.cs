@@ -3,9 +3,8 @@ using System.Collections;
 
 public class MoveScript : MonoBehaviour
 {
-		// instance variables, aka fields 
-		public float speed = 2;
-		public float spin = 4;
+
+    public float stepSize = 1;
 		
 
 		// Use this for initialization
@@ -18,24 +17,27 @@ public class MoveScript : MonoBehaviour
 		void Update ()
 		{
 			
-				// rotate with left/right  
-				if (Input.GetKey (KeyCode.RightArrow)) {
-						transform.Rotate (0, 0, -spin);	
+				//
+            if (Input.GetKeyUp(KeyCode.UpArrow))
+            {
+                    transform.Translate(0,stepSize, 0f);
 						
 						
 				}
-				if (Input.GetKey (KeyCode.LeftArrow)) {
-						transform.Rotate (0, 0, spin);	
+                if (Input.GetKeyUp(KeyCode.DownArrow))
+                {
+						transform.Translate (0,-stepSize, 0f);
 						
 				}
 
-				//move with up/down
-				if (Input.GetKey (KeyCode.UpArrow)) {
-						transform.Translate (speed * Time.deltaTime, 0f, 0f);
+                if (Input.GetKeyUp(KeyCode.RightArrow))
+                {
+						transform.Translate (stepSize,0, 0f);
 						
 				}
-				if (Input.GetKey (KeyCode.DownArrow)) {	
-						transform.Translate (-speed * Time.deltaTime, 0f, 0f);
+                if (Input.GetKeyUp(KeyCode.LeftArrow))
+                {
+                    transform.Translate(-stepSize,0, 0f);
 					
 				}
 				
