@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
+using System.Collections.Generic;
 
 public class Game : MonoBehaviour {
 
@@ -8,13 +8,15 @@ public class Game : MonoBehaviour {
 
     public Button inventoryToggle;
 
+    public List<string> inventory;
+
     // Use this for initialization
 	void Start () {
-        inventoryCanvas = inventoryCanvas.GetComponent<Canvas>();
-
         inventoryToggle = inventoryToggle.GetComponent<Button>();
 
         inventoryToggle.onClick.AddListener(ToggleInventory);
+
+        inventory = new List<string>();
 	}
 	
 	// Update is called once per frame
@@ -25,7 +27,12 @@ public class Game : MonoBehaviour {
     // show/hide the inventory
     void ToggleInventory()
     {
-        inventoryCanvas.enabled = false;
+        inventoryCanvas.gameObject.SetActive(!inventoryCanvas.gameObject.activeSelf);
         Debug.Log("Inventory toggled...");
+    }
+
+    public void addLetter(string letter)
+    {
+        inventory.Add(letter);
     }
 }
