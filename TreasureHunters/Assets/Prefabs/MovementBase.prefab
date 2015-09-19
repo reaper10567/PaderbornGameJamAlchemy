@@ -12,7 +12,7 @@ GameObject:
   - 23: {fileID: 2338196}
   - 61: {fileID: 6107438}
   - 114: {fileID: 11461560}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ColliderSensorNorth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31,7 +31,7 @@ GameObject:
   - 23: {fileID: 2399062}
   - 61: {fileID: 6120972}
   - 114: {fileID: 11422622}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ColliderSensorWest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ GameObject:
   - 23: {fileID: 2336272}
   - 61: {fileID: 6194992}
   - 114: {fileID: 11410846}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ColliderSensorSouth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   - 23: {fileID: 2353924}
   - 61: {fileID: 6109040}
   - 114: {fileID: 11447754}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ColliderSensorEast
   m_TagString: Untagged
   m_Icon: {fileID: 0}
