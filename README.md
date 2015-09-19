@@ -1,1 +1,1 @@
-# PaderbornGameJamAlchemy
+# PaderbornGameJamTreasureHunter
