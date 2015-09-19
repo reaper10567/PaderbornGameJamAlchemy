@@ -1,12 +1,12 @@
 # =============== #
 # Unity generated #
 # =============== #
-#[Tt]emp/
+[Tt]emp/
 #[Oo]bj/
-#[Bb]uild
+[Bb]uild
 #[Ll]ibrary/
 #sysinfo.txt
-#*.stackdump
+*.stackdump
  
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
