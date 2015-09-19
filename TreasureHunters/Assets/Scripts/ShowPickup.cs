@@ -46,7 +46,6 @@ public class ShowPickup : MonoBehaviour {
                 renderer.sprite = defaultTile;
                 break;
         }
-        renderer.sprite = a;
         renderer.enabled = true;
         timeLeft = showTime;
     }
