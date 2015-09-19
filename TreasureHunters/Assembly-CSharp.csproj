@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\ButtonScript.cs" />
+     <Compile Include="Assets\Scripts\ChestScript.cs" />
      <Compile Include="Assets\Scripts\CollisionReport.cs" />
      <Compile Include="Assets\Scripts\DoorScript.cs" />
      <Compile Include="Assets\Scripts\Game.cs" />
