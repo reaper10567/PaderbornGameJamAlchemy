@@ -9,9 +9,11 @@ public class MoveScript : MonoBehaviour
     public CollisionReport westColl;
     public CollisionReport eastColl;
     public CollisionReport southColl;
+    WalkAnimation walkAnim;
     // Use this for initialization
     void Start ()
 	{
+        walkAnim = GameObject.Find("Character").GetComponent<WalkAnimation>();
 	}
 	
 	// Update is called once per frame
@@ -23,6 +25,7 @@ public class MoveScript : MonoBehaviour
             if (!northColl.colliding)
             {
                 transform.Translate(0, stepSize, 0f);
+                walkAnim.moveNorth();
             }
 	    }
     if (Input.GetKeyUp(KeyCode.DownArrow) || Input.GetKeyUp(KeyCode.S))
@@ -30,6 +33,7 @@ public class MoveScript : MonoBehaviour
             if (!southColl.colliding)
             {
                 transform.Translate(0, -stepSize, 0f);
+                walkAnim.moveSouth();
             }
 	    }
     if (Input.GetKeyUp(KeyCode.RightArrow) || Input.GetKeyUp(KeyCode.D))
@@ -37,6 +41,7 @@ public class MoveScript : MonoBehaviour
             if (!eastColl.colliding)
             {
                 transform.Translate(stepSize, 0, 0f);
+                walkAnim.moveEast();
             }
 	    }
     if (Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.A))
@@ -44,6 +49,7 @@ public class MoveScript : MonoBehaviour
             if (!westColl.colliding)
             {
                 transform.Translate(-stepSize, 0, 0f);
+                walkAnim.moveWest();
             }
         }
 	}

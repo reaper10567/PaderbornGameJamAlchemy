@@ -25,7 +25,7 @@ public class DoorScript : MonoBehaviour {
     {
         
         print("put door open function here");
-		theWord.Play ();
+		theWord.Play();
         //quickest and dirtiest
         if (rightkey)
         {
