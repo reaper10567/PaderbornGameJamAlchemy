@@ -31,7 +31,7 @@ public class Game : MonoBehaviour {
         Debug.Log("Inventory toggled...");
     }
 
-    void addLetter(string letter)
+    public void addLetter(string letter)
     {
         inventory.Add(letter);
     }
