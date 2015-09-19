@@ -51,7 +51,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 133742}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9eaecb9ac39fade4aa92bbe2601cb5ed, type: 3}
+  m_Script: {fileID: 11500000, guid: 6953ff3f6644b78448430d48491430ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   loot: a
