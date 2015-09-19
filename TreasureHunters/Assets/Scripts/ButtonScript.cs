@@ -18,7 +18,7 @@ public class ButtonScript : MonoBehaviour {
 	}
 
 	public void StartGame(){
-		Application.LoadLevel (1);
+		Application.LoadLevel ("GameScreen");
 	}
 
 	public void QuitGame(){
