@@ -4,6 +4,7 @@ using System.Collections;
 public class ChestScript : MonoBehaviour {
 
     public string loot = "A";
+    public string GameControlClass = "GameControl";
     bool looted = false;
     public Sprite openedChest;
 	// Use this for initialization
@@ -20,7 +21,7 @@ public class ChestScript : MonoBehaviour {
     {
         if (!looted)
         {
-            GameObject.Find("GameControl").GetComponent<Game>().addLetter(loot);
+            GameObject.Find(GameControlClass).GetComponent<Game>().addLetter(loot);
             GameObject.Find("pickupTile").GetComponent<ShowPickup>().showPickup(loot);
             print("looted " + loot);
             looted = true;

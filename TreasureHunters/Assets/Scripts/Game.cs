@@ -66,6 +66,19 @@ public class Game : MonoBehaviour {
 
     public void addLetter(string letter)
     {
+        print("got " + letter);
         inventory.Add(letter);
+        if (letter.Equals("a"))
+        {
+            letterA.gameObject.SetActive(true);
+        }
+        if (letter.Equals("e"))
+        {
+            letterE.gameObject.SetActive(true);
+        }
+        if (letter.Equals("i"))
+        {
+            letterI.gameObject.SetActive(true);
+        }
     }
 }
