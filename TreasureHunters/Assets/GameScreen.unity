@@ -415,6 +415,38 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1974680799}
   m_RootOrder: 0
+--- !u!1 &1809887407
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 1809887408}
+  m_Layer: 5
+  m_Name: Inventory Items
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1809887408
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1809887407}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1974680799}
+  m_RootOrder: 1
+  m_AnchorMin: {x: .5, y: .5}
+  m_AnchorMax: {x: .5, y: .5}
+  m_AnchoredPosition: {x: 0, y: 67.8000031}
+  m_SizeDelta: {x: 551.200012, y: 100}
+  m_Pivot: {x: .5, y: .5}
 --- !u!1 &1974680798
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,6 +476,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1493192481}
+  - {fileID: 1809887408}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_AnchorMin: {x: 0, y: 0}
@@ -607,8 +640,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7cd4515b51b6934797c4fa4828a3ca0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventoryItems: {fileID: 1809887407}
   inventoryCanvas: {fileID: 1974680802}
   inventoryToggle: {fileID: 181017350}
+  inventory: []
 --- !u!1 &2133983695
 GameObject:
   m_ObjectHideFlags: 0
