@@ -1534,9 +1534,9 @@ MonoBehaviour:
   inventoryCanvas: {fileID: 1974680802}
   inventoryToggle: {fileID: 181017350}
   inventory: []
-  letterA: {fileID: 0}
-  letterE: {fileID: 0}
-  letterI: {fileID: 0}
+  letterA: {fileID: 1455598164}
+  letterE: {fileID: 657282663}
+  letterI: {fileID: 428813190}
 --- !u!1 &2133983695
 GameObject:
   m_ObjectHideFlags: 0
