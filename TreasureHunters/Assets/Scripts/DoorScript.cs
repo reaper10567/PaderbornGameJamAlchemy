@@ -3,9 +3,11 @@ using System.Collections;
 
 public class DoorScript : MonoBehaviour {
 
+	public string word;
+	AudioSource theWord;
 	// Use this for initialization
 	void Start () {
-	
+		theWord = GameObject.Find (word).GetComponent<AudioSource> ();
 	}
 	
 	// Update is called once per frame
@@ -22,6 +24,7 @@ public class DoorScript : MonoBehaviour {
     {
         bool rightkey = true;
         print("put door open function here");
+		theWord.Play ();
         //quickest and dirtiest
         if (rightkey)
         {
