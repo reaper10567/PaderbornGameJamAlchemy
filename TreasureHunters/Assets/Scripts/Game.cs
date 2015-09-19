@@ -11,11 +11,14 @@ public class Game : MonoBehaviour {
 
     public List<string> inventory;
 
+    public Button letterA;
+    public Button letterE;
+    public Button letterI;
+
     private Dictionary<string,Texture> letters;
 
     // Use this for initialization
 	void Start () {
-
 
         inventoryToggle = inventoryToggle.GetComponent<Button>();
 
@@ -31,14 +34,24 @@ public class Game : MonoBehaviour {
         {
             foreach (Transform item in transformArray)
             {
-                Destroy(item);
+                //Destroy(item);
             }
             Texture texture;
             foreach (string letter in inventory)
             {
                 if (letters.TryGetValue(letter, out texture))
                 {
-
+                    if (letter.Equals("a")) {
+                        letterA.enabled = true;
+                    }
+                    if (letter.Equals("e"))
+                    {
+                        letterE.enabled = true;
+                    }
+                    if (letter.Equals("i"))
+                    {
+                        letterI.enabled = true;
+                    }
                 }
             }
         }
