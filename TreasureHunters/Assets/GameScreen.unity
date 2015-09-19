@@ -173,7 +173,7 @@ GameObject:
   - 114: {fileID: 181017351}
   - 114: {fileID: 181017350}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Inventory Toggle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -235,7 +235,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 181017351}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 221605490}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &181017351
@@ -415,13 +426,14 @@ GameObject:
   - 223: {fileID: 1974680802}
   - 114: {fileID: 1974680801}
   - 114: {fileID: 1974680800}
+  - 114: {fileID: 1974680803}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1974680799
 RectTransform:
   m_ObjectHideFlags: 0
@@ -495,6 +507,19 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
+--- !u!114 &1974680803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1974680798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7cd4515b51b6934797c4fa4828a3ca0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventoryCanvas: {fileID: 1974680802}
+  inventoryToggle: {fileID: 181017350}
 --- !u!1 &2133983695
 GameObject:
   m_ObjectHideFlags: 0
