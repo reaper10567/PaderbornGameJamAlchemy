@@ -15,6 +15,17 @@ public class DoorScript : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D coll)
     {
+        openDoor();
+    }
+
+    private void openDoor()
+    {
+        bool rightkey = true;
         print("put door open function here");
+        //quickest and dirtiest
+        if (rightkey)
+        {
+            transform.parent.Translate(1000, 0, 0);
+        }
     }
 }
