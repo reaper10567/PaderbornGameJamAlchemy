@@ -21,6 +21,7 @@ public class ChestScript : MonoBehaviour {
         if (!looted)
         {
             GameObject.Find("GameControl").GetComponent<Game>().addLetter(loot);
+            GameObject.Find("pickupTile").GetComponent<ShowPickup>().showPickup(loot);
             print("looted " + loot);
             looted = true;
             GetComponent<SpriteRenderer>().sprite = openedChest;
