@@ -5,8 +5,9 @@ public class DoorScript : MonoBehaviour {
 
 	public string word;
 	AudioSource theWord;
-	// Use this for initialization
-	void Start () {
+    public bool rightkey = true;
+    // Use this for initialization
+    void Start () {
 		theWord = GameObject.Find (word).GetComponent<AudioSource> ();
 	}
 	
@@ -22,7 +23,7 @@ public class DoorScript : MonoBehaviour {
 
     private void openDoor()
     {
-        bool rightkey = true;
+        
         print("put door open function here");
 		theWord.Play ();
         //quickest and dirtiest
